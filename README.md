@@ -48,6 +48,13 @@ setTheme('dark')    // 'auto' | 'light' | 'dark'; se recuerda en localStorage
 Cada color se declara una vez con `light-dark()`, así que no hay dos bloques que se
 desincronicen. Todos los pares de texto sobre fondo pasan 4.5:1 (WCAG AA).
 
+**Al cambiar el esquema en caliente, Chromium puede dejar un elemento sin repintar**: el
+valor calculado ya es el nuevo, pero en pantalla queda un color intermedio hasta que algo
+le cambia el estilo (visto en iatosvg con la emulación de Playwright, 2026-10-14; una
+carga limpia en cada modo sale bien). Si lo ves en una prueba, recarga antes de dar el
+tema por roto. Y no pongas `transition` sobre un color `--dt-*`: no arregla nada y
+alarga el intermedio.
+
 ## Tokens
 
 | | |
