@@ -1,0 +1,34 @@
+{
+  "name": "@dotrino/theme",
+  "version": "0.1.0",
+  "description": "El tema del ecosistema Dotrino («Cool & Cozy»): colores claro y oscuro, tipografías Quicksand y Comfortaa empaquetadas, y las variables de los componentes compartidos. Una sola hoja para todas las apps.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "style": "src/theme.css",
+  "exports": {
+    ".": "./src/index.js",
+    "./theme.css": "./src/theme.css",
+    "./fonts/*": "./fonts/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdotrino/dotrino-theme.git"
+  },
+  "keywords": [
+    "dotrino",
+    "theme",
+    "design-tokens",
+    "css"
+  ]
+}
