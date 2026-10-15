@@ -36,7 +36,8 @@ Vite copia las fuentes al build. El CSS de la app usa los tokens:
 ## Claro y oscuro
 
 La hoja sigue al sistema del usuario. Para fijarlo, `<html data-theme="light">` (o
-`dark`). Para dejar que el usuario elija:
+`dark`). **El usuario elige con el sol/luna del topbar**: `<dotrino-topbar theme>`
+(`@dotrino/topbar` ≥ 0.16.0), que ya usa esto por debajo. Para hacerlo a mano:
 
 ```js
 import { applyTheme, setTheme, getTheme, resolvedTheme } from '@dotrino/theme'
