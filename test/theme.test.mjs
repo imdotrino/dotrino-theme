@@ -62,3 +62,13 @@ test('setTheme writes data-theme and remembers it; auto clears both', async () =
   stored['dotrino-theme'] = 'garbage'
   assert.equal(t.getTheme(), 'auto')
 })
+
+test('every color variable <dotrino-profile> reads is themed', () => {
+  // Una que falte cae al color literal del componente (beige claro): en oscuro, la fila del
+  // perfil activo y los paneles de reputación salían claros con el texto claro encima.
+  const block = css.match(/dotrino-profile\s*\{([^}]*)\}/)[1]
+  const set = new Set([...block.matchAll(/(--ccp-[\w-]+)\s*:/g)].map(m => m[1]))
+  const colors = ['bg', 'bg-2', 'bg-3', 'bg-4', 'border', 'text', 'muted', 'accent', 'accent-2',
+    'accent-text', 'gold', 'derived', 'online', 'affinity', 'input-bg']
+  assert.deepEqual(colors.map(c => `--ccp-${c}`).filter(v => !set.has(v)), [])
+})

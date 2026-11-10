@@ -1,6 +1,6 @@
 {
   "name": "@dotrino/theme",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "El tema del ecosistema Dotrino («Cool & Cozy»): colores claro y oscuro, tipografías Quicksand y Comfortaa empaquetadas, y las variables de los componentes compartidos. Una sola hoja para todas las apps.",
   "license": "MIT",
   "type": "module",

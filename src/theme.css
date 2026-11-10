@@ -124,14 +124,20 @@ dotrino-support {
 }
 dotrino-profile {
   --ccp-bg:            var(--dt-surface);
+  --ccp-bg-2:          var(--dt-surface-2);
+  --ccp-bg-3:          var(--dt-surface-3);
+  --ccp-bg-4:          var(--dt-line);
   --ccp-input-bg:      var(--dt-surface-2);
   --ccp-text:          var(--dt-text);
   --ccp-muted:         var(--dt-text-dim);
   --ccp-border:        var(--dt-line-soft);
   --ccp-accent:        var(--dt-accent);
+  --ccp-accent-2:      var(--dt-accent-press);
   --ccp-accent-text:   var(--dt-accent-ink);
   --ccp-gold:          var(--dt-gold);
   --ccp-online:        var(--dt-ok);
+  --ccp-derived:       var(--dt-busy);
+  --ccp-affinity:      var(--dt-mint);
   --ccp-font:          var(--dt-font);
   --ccp-font-headline: var(--dt-font-brand);
   --ccp-font-mono:     var(--dt-font-mono);
