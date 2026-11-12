@@ -1,0 +1,10 @@
+[package]
+name = "dotrino-theme"
+version = "0.1.0"
+edition = "2024"
+description = "El tema del ecosistema Dotrino («Cool & Cozy») para ventanas de escritorio con iced: los mismos tokens que theme.css, las fuentes y los estilos de los controles."
+license = "MIT"
+repository = "https://github.com/imdotrino/dotrino-theme"
+
+[dependencies]
+iced = "0.14"
